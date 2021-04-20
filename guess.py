@@ -1,0 +1,19 @@
+# 產生一個隨機整數1~100
+# 讓使用者重複輸入數字去猜
+# 猜對的話 印出"恭喜猜對囉"
+# 猜錯的話要告訴他 比答案大/小
+import random
+r = random.randint(1, 100)
+while True:
+	num = input('請猜數字: ')
+	num = int(num)
+	if num == r:
+		print('恭喜猜對囉!')
+		break
+	elif num < r:
+		print('猜錯囉! 比答案小')
+	elif num > r:
+		print('猜錯囉! 比答案大')
+
+
+
